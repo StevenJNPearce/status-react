@@ -86,7 +86,7 @@
 (def default-networks
   (transform-config
    (merge testnet-networks
-          (when config/mainnet-networks-enabled? mainnet-networks))))
+          mainnet-networks)))
 
 (def default-wnodes
   {:testnet {"main"   {:id      "main"

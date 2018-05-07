@@ -498,6 +498,10 @@
    :close-app-button                     "Confirm"
    :connect-wnode-content                "Connect to {{name}}?"
 
+   :mainnet-warning-title                "Warning!"
+   :mainnet-warning-text                 "You're switching to Mainnet which has not been audited and is still in active development.\n\nSome of the risks include:\n\n- Accounts may be unrecoverable due to breaking changes\n- Loss of ETH and tokens\n- Failure to send or receive messages\n\nSwitching to mainnet should be done for testing purposes only"
+   :mainnet-warning-ok-text              "I understand"
+
    ;; browser
    :browser                              "Browser"
    :enter-dapp-url                       "Enter a ÐApp URL"
