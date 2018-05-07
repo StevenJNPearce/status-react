@@ -100,6 +100,7 @@ def getVersionCode = { ->
         exec {
             commandLine "sh", "../build_no.sh", "--tag"
             standardOutput = stdOut
+            errorOutput = System.err
         }
         return stdOut.toString().toInteger()
     }
