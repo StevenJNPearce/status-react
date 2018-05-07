@@ -98,6 +98,16 @@ def enableProguardInReleaseBuilds = false
 def getVersionCode = { ->
     new ByteArrayOutputStream().withStream { stdOut ->
         exec {
+            commandLine "pwd"
+            standardOutput = System.out
+            errorOutput = System.err
+        }
+        exec {
+            commandLine "ls -l"
+            standardOutput = System.out
+            errorOutput = System.err
+        }
+        exec {
             commandLine "sh", "../build_no.sh", "--tag"
             standardOutput = stdOut
             errorOutput = System.err
